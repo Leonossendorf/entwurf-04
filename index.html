@@ -8,7 +8,6 @@
 <meta name="description" content="Unverbindlicher Entwurf: Feiern im Wintergarten bis 150 Personen und 27 Hotelzimmer mit Frühstück im Landgasthaus & Hotel Eggert in Rheine-Elte.">
 <meta name="theme-color" content="#FFFDF8">
 <link rel="preload" href="fonts/cormorant.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="fonts/satisfy.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="css/style.css">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%238E3B2A'/%3E%3Ctext x='16' y='23' text-anchor='middle' font-family='Georgia' font-size='20' fill='%23fff'%3EE%3C/text%3E%3C/svg%3E">
 </head>
@@ -49,17 +48,17 @@
       </div>
       <div class="karten">
         <a class="tischkarte" href="#anfrage" data-modus="feier">
-          <span class="reserviert">Reserviert für</span>
-          <span class="name">Ihre Feier</span>
+          <span class="reserviert">Gesellschaften</span>
+          <span class="name">bis 150 Gäste</span>
           <svg class="zier" aria-hidden="true"><use href="#zier"/></svg>
-          <span class="fakt">Wintergarten bis 150 Personen<small>variabel teilbar, mit Gartenterrasse</small></span>
+          <span class="fakt">im Wintergarten<small>variabel teilbar, mit Gartenterrasse</small></span>
           <span class="los">Feier anfragen <svg aria-hidden="true"><use href="#pfeil"/></svg></span>
         </a>
         <a class="tischkarte" href="#anfrage" data-modus="zimmer">
-          <span class="reserviert">Reserviert für</span>
-          <span class="name">Ihre Nacht</span>
+          <span class="reserviert">Hotel</span>
+          <span class="name">27 Zimmer</span>
           <svg class="zier" aria-hidden="true"><use href="#zier"/></svg>
-          <span class="fakt">27 Zimmer mit Frühstück<small>ruhig gelegen, ab 79 € pro Nacht</small></span>
+          <span class="fakt">mit Frühstück<small>ruhig gelegen, ab 79 € pro Nacht</small></span>
           <span class="los">Zimmer anfragen <svg aria-hidden="true"><use href="#pfeil"/></svg></span>
         </a>
       </div>
@@ -69,6 +68,7 @@
   <section class="abschnitt" id="wintergarten" aria-labelledby="wg-titel">
     <div class="wrap">
       <div class="kopfzeile">
+        <img class="zeichnung" src="img/wintergarten.svg" width="240" height="110" alt="Gezeichnete Ansicht des Landgasthaus Eggert mit Wintergarten, Laterne und Hecke">
         <span class="oberzeile">Saalbetrieb</span>
         <h2 id="wg-titel">Der Wintergarten für Ihre Feier</h2>
         <p>Ob aus privatem oder geschäftlichem Anlass, im kleinen oder großen Rahmen: Wir bieten die Räume für Ihre Feier und schaffen dazu das passende Ambiente.</p>
@@ -102,7 +102,7 @@
     <div class="wrap">
       <div class="kopfzeile">
         <span class="oberzeile">Anfrage in einer Minute</span>
-        <h2 id="anfrage-titel">Wir reservieren Ihnen gern einen Platz.</h2>
+        <h2 id="anfrage-titel">Feier oder Zimmer anfragen.</h2>
         <p>Ein paar Eckdaten genügen. Alles Weitere besprechen wir persönlich mit Ihnen.</p>
       </div>
       <div class="anfrage-raster">
@@ -188,16 +188,17 @@
           </div>
         </form>
 
-        <aside class="vorschau" aria-label="Ihre Tischkarte, Vorschau der Anfrage">
+        <aside class="vorschau" aria-label="Ihre Anfrage auf einen Blick">
           <div class="tischkarte">
-            <span class="reserviert" id="v-titel">Reserviert für</span>
-            <span class="name" id="v-name">Ihre Feier</span>
+            <img class="mini" id="v-bild" src="img/wintergarten.svg" width="240" height="110" alt="">
+            <span class="reserviert" id="v-titel">Ihre Anfrage</span>
+            <span class="name" id="v-name">Feier im Wintergarten</span>
             <svg class="zier" aria-hidden="true"><use href="#zier"/></svg>
             <dl id="v-liste"></dl>
             <div class="preis" id="v-preis" hidden><span>Richtwert inkl. Frühstück</span><b id="v-summe">–</b></div>
           </div>
           <div class="tischfuss" aria-hidden="true"></div>
-          <p class="unter">Ihre Tischkarte füllt sich, während Sie tippen.</p>
+          <p class="unter">Alles auf einen Blick, bevor Sie absenden.</p>
         </aside>
       </div>
     </div>
@@ -290,6 +291,7 @@
 
 <footer class="fuss">
   <div class="wrap">
+    <img class="fuss-bild" src="img/wintergarten-hell.svg" width="240" height="110" alt="">
     <p class="entwurf">Unverbindlicher Entwurf von Leon Oßendorf, kein offizieller Auftritt des Landgasthaus &amp; Hotel Eggert.</p>
     <p>Texte, Preise und Fotos stammen von hotel-eggert.de und wurden nur neu angeordnet. Anfragen werden in diesem Entwurf nicht versendet.</p>
     <p><a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a> · Gestaltung: <a href="https://leonossendorf.de">leonossendorf.de</a></p>

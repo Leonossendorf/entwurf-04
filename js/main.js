@@ -40,7 +40,8 @@
         ? 'Der ganze Wintergarten: Platz für bis zu 150 Gäste.'
         : g > 90 ? 'Der Wintergarten bietet Platz für bis zu 150 Gäste.'
         : 'Der Wintergarten ist teilbar, so passt der Raum zu Ihrer Runde.';
-      vName.textContent = name || 'Ihre Feier';
+      vName.textContent = name || 'Feier im Wintergarten';
+      $('v-bild').hidden = false;
       html += zeile('Anlass', gewaehlt('anlass'));
       html += zeile('Termin', datumText($('datum').value) || 'noch offen');
       html += zeile('Gäste', g + (g >= 150 ? ' (ganzer Saal)' : ''));
@@ -50,7 +51,8 @@
     } else {
       var opt = $('zimmerart').selectedOptions[0];
       var n = naechte(), anzahl = +$('anzahl').value;
-      vName.textContent = name || 'Ihre Nacht';
+      vName.textContent = name || 'Übernachtung';
+      $('v-bild').hidden = true;
       html += zeile('Anreise', kurzDatum($('anreise').value) || 'noch offen');
       html += zeile('Abreise', kurzDatum($('abreise').value) || 'noch offen');
       html += zeile('Nächte', n ? String(n) : '');
@@ -89,11 +91,11 @@
   form.addEventListener('change', aktualisieren);
   form.addEventListener('submit', function (e) {
     e.preventDefault();
-    $('v-titel').textContent = 'Angefragt für';
+    $('v-titel').textContent = 'Anfrage vorbereitet';
     bestaetigt.hidden = false;
     requestAnimationFrame(function () { requestAnimationFrame(function () { bestaetigt.classList.add('da'); }); });
   });
-  form.addEventListener('input', function () { $('v-titel').textContent = 'Reserviert für'; });
+  form.addEventListener('input', function () { $('v-titel').textContent = 'Ihre Anfrage'; });
 
   // Daumenleiste auf dem Handy erst nach dem ersten Bildschirm zeigen
   var daumen = $('daumen');

@@ -36,15 +36,15 @@
     if (modus === 'feier') {
       var g = +gaeste.value;
       gaesteZahl.innerHTML = g + ' <small>Gäste</small>';
-      gaesteTipp.textContent = g >= 150
-        ? 'Der ganze Wintergarten: Platz für bis zu 150 Gäste.'
-        : g > 90 ? 'Der Wintergarten bietet Platz für bis zu 150 Gäste.'
+      gaesteTipp.textContent = g >= 80
+        ? 'Der ganze Wintergarten: Platz für bis zu 80 Gäste.'
+        : g > 50 ? 'Der Wintergarten bietet Platz für bis zu 80 Gäste.'
         : 'Der Wintergarten ist teilbar, so passt der Raum zu Ihrer Runde.';
       vName.textContent = name || 'Feier im Wintergarten';
       $('v-bild').hidden = false;
       html += zeile('Anlass', gewaehlt('anlass'));
       html += zeile('Termin', datumText($('datum').value) || 'noch offen');
-      html += zeile('Gäste', g + (g >= 150 ? ' (ganzer Saal)' : ''));
+      html += zeile('Gäste', g + (g >= 80 ? ' (ganzer Saal)' : ''));
       html += zeile('Bewirtung', gewaehlt('essen'));
       html += zeile('Zimmer', $('mitzimmer').checked ? 'bitte mit anfragen' : '');
       vPreis.hidden = true;
@@ -77,7 +77,7 @@
   });
 
   $('weniger').addEventListener('click', function () { gaeste.value = Math.max(10, +gaeste.value - 10); aktualisieren(); });
-  $('mehr').addEventListener('click', function () { gaeste.value = Math.min(150, +gaeste.value + 10); aktualisieren(); });
+  $('mehr').addEventListener('click', function () { gaeste.value = Math.min(80, +gaeste.value + 10); aktualisieren(); });
   $('anreise').addEventListener('change', function () {
     var a = $('anreise').value;
     if (!a) return;

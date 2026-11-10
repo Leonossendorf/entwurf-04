@@ -140,6 +140,7 @@ a.tischkarte:hover .los svg { transform: translateX(3px); }
 .zitat blockquote::before { content: "„"; color: var(--gold); }
 .zitat blockquote::after { content: "“"; color: var(--gold); }
 .zitat figcaption { font-size: .9rem; color: var(--tinte-2); margin-top: .5rem; }
+.preis-hinweis { margin: 1rem 0 0; color: var(--tinte-2); font-size: 1rem; }
 @media (max-width: 900px) { .saal { grid-template-columns: 1fr; } .beratung { grid-template-columns: 1fr; gap: 1rem; } }
 
 /* Anfrage */

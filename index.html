@@ -5,10 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
 <title>Landgasthaus &amp; Hotel Eggert, Elte: Feiern im Wintergarten und Übernachten (Entwurf)</title>
-<meta name="description" content="Unverbindlicher Entwurf: Feiern im Wintergarten bis 150 Personen und 27 Hotelzimmer mit Frühstück im Landgasthaus & Hotel Eggert in Rheine-Elte.">
+<meta name="description" content="Unverbindlicher Entwurf: Feiern im Wintergarten bis 80 Personen und 27 Hotelzimmer mit Frühstück im Landgasthaus & Hotel Eggert in Rheine-Elte.">
 <meta name="theme-color" content="#FFFDF8">
 <link rel="preload" href="fonts/cormorant.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/style.css?v=20261110">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%238E3B2A'/%3E%3Ctext x='16' y='23' text-anchor='middle' font-family='Georgia' font-size='20' fill='%23fff'%3EE%3C/text%3E%3C/svg%3E">
 </head>
 <body>
@@ -44,12 +44,12 @@
     <div class="wrap hero-inhalt">
       <div class="hero-text">
         <h1 id="hero-titel">Feiern im Wintergarten. <em>Übernachten</em> in Elte.</h1>
-        <p class="lead">Gesellschaften bis 150 Personen und 27 Zimmer mit Frühstück, im Dorf Elte vor den Toren von Rheine. Individuell, persönlich und unkompliziert.</p>
+        <p class="lead">Feiern bis 80 Personen und 27 Zimmer mit Frühstück, im Dorf Elte vor den Toren von Rheine. Individuell, persönlich und unkompliziert.</p>
       </div>
       <div class="karten">
         <a class="tischkarte" href="#anfrage" data-modus="feier">
           <span class="reserviert">Gesellschaften</span>
-          <span class="name">bis 150 Gäste</span>
+          <span class="name">bis 80 Gäste</span>
           <svg class="zier" aria-hidden="true"><use href="#zier"/></svg>
           <span class="fakt">im Wintergarten<small>variabel teilbar, mit Gartenterrasse</small></span>
           <span class="los">Feier anfragen <svg aria-hidden="true"><use href="#pfeil"/></svg></span>
@@ -78,7 +78,7 @@
         <div class="saal-seite">
           <figure class="foto"><img src="img/festtafel.jpg" width="1400" height="474" loading="lazy" alt="Lange Festtafel mit weißen Tischdecken, Kerzen und Blumen"></figure>
           <div class="zahlen">
-            <div><b>150</b><span>Personen finden im Wintergarten Platz</span></div>
+            <div><b>80</b><span>Personen finden im Wintergarten Platz</span></div>
             <div><b>teilbar</b><span>variabel, auch für kleine Runden</span></div>
             <div><b>Terrasse</b><span>liebevoll gestaltet, im Sommer</span></div>
             <div><b>Parken</b><span>ausreichend Parkplätze am Haus</span></div>
@@ -86,7 +86,7 @@
         </div>
       </div>
       <ul class="anlaesse" aria-label="Anlässe">
-        <li>Hochzeitsfeier</li><li>Geburtstag</li><li>Kaffeetrinken</li><li>Vereinstreffen</li><li>Seminar</li><li>Betriebsfeier</li>
+        <li>Hochzeitsfeier</li><li>Weihnachtsfeier</li><li>Geburtstag</li><li>Kaffeetrinken</li><li>Vereinstreffen</li><li>Seminar</li><li>Betriebsfeier</li>
       </ul>
       <div class="beratung">
         <div><h3>Speisen und Menüfolge</h3><p>Wir beraten Sie individuell, was auf den Tisch kommt.</p></div>
@@ -94,6 +94,7 @@
         <div><h3>Dekoration</h3><p>Wir dekorieren ganz nach Ihren Wünschen.</p></div>
       </div>
       <figure class="zitat"><blockquote>Gerne beraten wir Sie und machen Ihnen ein Angebot.</blockquote><figcaption>Familie Eggert</figcaption></figure>
+      <p class="preis-hinweis">Preise für Feiern im Wintergarten nennen wir Ihnen gern auf Anfrage.</p>
       <p style="margin-top:1.6rem"><a class="knopf" href="#anfrage" data-modus="feier">Feier im Wintergarten anfragen <svg aria-hidden="true"><use href="#pfeil"/></svg></a></p>
     </div>
   </section>
@@ -108,7 +109,7 @@
       <div class="anfrage-raster">
         <form class="formular" id="formular" novalidate>
           <div class="umschalter" role="group" aria-label="Was möchten Sie anfragen?">
-            <button type="button" data-modus="feier" aria-pressed="true"><b>Eine Feier</b><span>im Wintergarten, bis 150 Gäste</span></button>
+            <button type="button" data-modus="feier" aria-pressed="true"><b>Eine Feier</b><span>im Wintergarten, bis 80 Gäste</span></button>
             <button type="button" data-modus="zimmer" aria-pressed="false"><b>Ein Zimmer</b><span>Übernachtung mit Frühstück</span></button>
           </div>
 
@@ -116,6 +117,7 @@
             <fieldset class="chips feld">
               <legend>Anlass</legend>
               <label><input type="radio" name="anlass" value="Hochzeitsfeier"><span>Hochzeitsfeier</span></label>
+              <label><input type="radio" name="anlass" value="Weihnachtsfeier"><span>Weihnachtsfeier</span></label>
               <label><input type="radio" name="anlass" value="Geburtstag" checked><span>Geburtstag</span></label>
               <label><input type="radio" name="anlass" value="Kaffeetrinken"><span>Kaffeetrinken</span></label>
               <label><input type="radio" name="anlass" value="Vereinstreffen"><span>Vereinstreffen</span></label>
@@ -131,10 +133,10 @@
               <span class="label" id="gaeste-label">Wie viele Gäste?</span>
               <div class="gaeste">
                 <button type="button" id="weniger" aria-label="Zehn Gäste weniger">−</button>
-                <output id="gaeste-zahl" aria-live="polite" for="gaeste">60 <small>Gäste</small></output>
+                <output id="gaeste-zahl" aria-live="polite" for="gaeste">40 <small>Gäste</small></output>
                 <button type="button" id="mehr" aria-label="Zehn Gäste mehr">+</button>
               </div>
-              <input type="range" id="gaeste" name="gaeste" min="10" max="150" step="5" value="60" aria-labelledby="gaeste-label">
+              <input type="range" id="gaeste" name="gaeste" min="10" max="80" step="5" value="40" aria-labelledby="gaeste-label">
               <p class="tipp" id="gaeste-tipp">Der Wintergarten ist teilbar, so passt der Raum zu Ihrer Runde.</p>
             </div>
             <fieldset class="chips feld">
@@ -214,7 +216,7 @@
           <li>27 Zimmer, 56 Betten</li>
           <li>Dusche und WC</li>
           <li>SAT-TV</li>
-          <li>Kostenloses WLAN über Freifunk</li>
+          <li>WLAN</li>
           <li>Reichhaltiges Frühstücksbuffet</li>
           <li>Parkplätze am Haus</li>
         </ul>
@@ -303,6 +305,6 @@
   <a class="knopf" href="#anfrage" data-modus="feier">Feier oder Zimmer anfragen</a>
 </div>
 
-<script src="js/main.js"></script>
+<script src="js/main.js?v=20261110"></script>
 </body>
 </html>
